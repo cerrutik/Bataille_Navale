@@ -13,7 +13,8 @@ public class Player
 	
 	//builder
 	/**
-	 * the player is created with a number, two boards and an amount of ships 
+	 * the player is created with a number, two boards and an amount of ships
+	 * @param int  
 	 */
 	
 	public Player(int num)

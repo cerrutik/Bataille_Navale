@@ -8,7 +8,7 @@ public class Pawn
 {
 	//attributes
 	/**
-	 * Two differents color, red and white
+	 * Two different color, red and white
 	 * red is for a hit and white for a miss
 	 */
 	private final Color pawnColor;
@@ -16,9 +16,11 @@ public class Pawn
 	//builder
 	/**
 	 * create a new pawn
+	 * @param col
 	 */
 	public Pawn(Color col)
 	{
 		this.pawnColor = col;
+		col.getName();
 	}
 }

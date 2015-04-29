@@ -20,7 +20,7 @@ public class Board
  */
 	private final int width;
 	private final int length;
-	
+	private int[][] board;
 	//builders
 	/**
 	 * The board is created with the default values
@@ -30,5 +30,6 @@ public class Board
 	{
 		this.width = DEFAULT_WIDTH;
 		this.length = DEFAULT_LENGTH;
+		
 	}
 }		 	
