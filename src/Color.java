@@ -1,4 +1,4 @@
-
+// TODO write a comment
 public enum Color
 {
 	//objects
@@ -7,15 +7,16 @@ public enum Color
 	 * Red and white
 	 */
 	RED("R"),
+	// TODO write a comment
 	WHITE("W");
 	
 	//attributes
-	/**
-	 * 
-	 */
+	// TODO write a comment
+	// TODO initialize value in a private constructor
 	private String name = "";
 	
 	//builder
+	// TODO finish writing comment
 	/**
 	 * 
 	 * @param name
@@ -25,6 +26,7 @@ public enum Color
 		this.name = name;
 	}
 	
+	// TODO finish writing comment
 	//method
 	/**
 	 * 

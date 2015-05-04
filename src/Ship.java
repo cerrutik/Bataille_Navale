@@ -6,14 +6,19 @@
 public class Ship
 {
 	//attributes
+	// TODO fix comment
 	/**
 	 * each ship has a name and a number of positions hit
 	 */
 	private final ShipType ship;
+	
+	// TODO write comment
+	// TODO fix naming conventions
 	private int NbPositionHit;
 	
 	//builder
 	
+	// TODO detail comment
 	/**
 	 * Create a ship 
 	 * @param ShipType the ship will be given a name and a size
@@ -23,6 +28,4 @@ public class Ship
 		this.ship = shipName;
 		shipName.getSize();
 	}
-	
-
 }

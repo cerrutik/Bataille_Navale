@@ -1,3 +1,4 @@
+// TODO fix comment (this creates nothing)
 /**
  * create a new game
  * @author cerrutik
@@ -21,6 +22,7 @@ public class Game
 	/**
 	 * launch the game, creating two player, giving them two boards and some ships
 	 */
+	// TODO fix method declaration
 	public void play
 	{
 		Game newGame = new Game();

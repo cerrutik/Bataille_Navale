@@ -7,6 +7,7 @@
 public class Pawn
 {
 	//attributes
+	// TODO fix comment
 	/**
 	 * Two different color, red and white
 	 * red is for a hit and white for a miss
@@ -14,6 +15,7 @@ public class Pawn
 	private final Color pawnColor;
 	
 	//builder
+	// TODO detail comment (and comment parameter)
 	/**
 	 * create a new pawn
 	 * @param col
@@ -23,4 +25,6 @@ public class Pawn
 		this.pawnColor = col;
 		col.getName();
 	}
+	
+	// TODO add a getter
 }
