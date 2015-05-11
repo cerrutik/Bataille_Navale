@@ -29,7 +29,7 @@ public class Board
 	// The length, the vertical size of the board
 	//the number of raws of the board
 	
-	private String[] cases;
+	
 	//builders
 	
 	/**
@@ -39,15 +39,8 @@ public class Board
 	{
 		this.width = DEFAULT_WIDTH;
 		this.length = DEFAULT_LENGTH;
-		this.createBoard();
+		this.createGrid();
 	}
 
-	/**
-	 * 
-	 * @return
-	 */
-	private void createBoard()
-	{
-		String caseLimit = "|"
-	}
+
 }		 	

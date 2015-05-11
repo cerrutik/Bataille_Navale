@@ -1,4 +1,7 @@
 package fr.iutvalence.info.m2103.project.battleship;
+import java.util.List;
+import java.util.LinkedList;
+
 /**
  * create a new player with an amount of ships
  * @author cerrutik
@@ -13,17 +16,25 @@ public class Player
 	private final int number;
 	
 	//builder
-	// TODO finish writing comment
 	/**
-	 * the player is created with a number, two boards and an amount of ships
+	 * the player is created with a number, a board and an amount of ships
 	 * 
 	 * @param int  
 	 */
 	public Player(int num)
 	{
 		this.number = num;
-		// TODO (think about it) these are local variables
-		Board board1 = new Board();
-		Board board2= new Board();
+		new Board();
+		List<Ship> ShipList = new LinkedList<Ship>();
+		ShipList.add(new Ship(ShipType.AIRCRAFT_CARRIER));
+		ShipList.add(new Ship(ShipType.BATTLESHIP));
+		ShipList.add(new Ship(ShipType.BATTLESHIP));
+		ShipList.add(new Ship(ShipType.SUBMARINE));
+		ShipList.add(new Ship(ShipType.SUBMARINE));
+		ShipList.add(new Ship(ShipType.CRUISER));
+		ShipList.add(new Ship(ShipType.CRUISER));
+		ShipList.add(new Ship(ShipType.PATROL_BOAT));
+		ShipList.add(new Ship(ShipType.PATROL_BOAT));
+		ShipList.add(new Ship(ShipType.PATROL_BOAT));
 	}
 }

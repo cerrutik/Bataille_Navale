@@ -20,11 +20,12 @@ public class Game
 	}
 	//methods
 	/**
-	 * launch the game, creating two player, giving them two boards and some ships
+	 * launch the game, creating two player, giving them a board and some ships
 	 */
 
 	public static void play()
 	{
 		Game newGame = new Game();
+		
 	}
 }
