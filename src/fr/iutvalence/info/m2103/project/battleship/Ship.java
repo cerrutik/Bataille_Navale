@@ -1,5 +1,4 @@
 package fr.iutvalence.info.m2103.project.battleship;
-import java.util.List;
 /**
  * The ship is a unit, there are different types of ships
  * a ship is set on a board and can be hit
@@ -14,7 +13,7 @@ public class Ship
 	 * Ship type
 	 * 
 	 */
-	private final ShipType ship;
+	private final ShipType shipType;
 	
 	/**
 	 * Number of times this ship has been hit
@@ -22,11 +21,10 @@ public class Ship
 	private int numberOfHits;
 	
 	/**
-	 * x and y,position of the head of the ship 
+	 * position of the head of the ship 
 	 */
-	private int x;
+	private final Position position;
 	
-	private int y;
 	
 	/**
 	 * Position of the boat, vertical or not
@@ -36,13 +34,16 @@ public class Ship
 	//builder
 	
 	/**
-	 * Create a ship with a name and a size
-	 * @param ShipType 
+	 * Create a ship with a name, a size, a number of hits set to 0, a new position
+	 * and if the ship is vertical or not  
+	 * @param ShipType shipName, int x, int y, boolean vertical
 	 */
-	public Ship(ShipType shipName)
+	public Ship(ShipType shipType, Position position, boolean vertical)
 	{
-		this.ship = shipName;
-		shipName.getSize();
+		this.shipType = shipType;
+		this.numberOfHits = 0;
+		this.position = position;
+		this.isVertical = vertical;
 	}
 	
 }

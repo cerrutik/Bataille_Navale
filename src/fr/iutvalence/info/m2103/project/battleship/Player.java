@@ -17,7 +17,7 @@ public class Player
 	
 	//builder
 	/**
-	 * the player is created with a number, a board and an amount of ships
+	 * the player is created with a number, a board and an amount of ships (list) set on the board
 	 * 
 	 * @param int  
 	 */
@@ -26,7 +26,7 @@ public class Player
 		this.number = num;
 		new Board();
 		List<Ship> ShipList = new LinkedList<Ship>();
-		ShipList.add(new Ship(ShipType.AIRCRAFT_CARRIER));
+		ShipList.add(new Ship(ShipType.AIRCRAFT_CARRIER,position(0,0),true));
 		ShipList.add(new Ship(ShipType.BATTLESHIP));
 		ShipList.add(new Ship(ShipType.BATTLESHIP));
 		ShipList.add(new Ship(ShipType.SUBMARINE));
@@ -36,5 +36,6 @@ public class Player
 		ShipList.add(new Ship(ShipType.PATROL_BOAT));
 		ShipList.add(new Ship(ShipType.PATROL_BOAT));
 		ShipList.add(new Ship(ShipType.PATROL_BOAT));
+		
 	}
 }
