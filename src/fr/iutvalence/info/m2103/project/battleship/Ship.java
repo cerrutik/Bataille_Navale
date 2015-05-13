@@ -15,11 +15,9 @@ public class Ship
 	 */
 	private final ShipType shipType;
 	
-	/**
-	 * Number of times this ship has been hit
-	 */
-	private int numberOfHits;
+
 	
+	private boolean[] hits;
 	/**
 	 * position of the head of the ship 
 	 */
@@ -41,9 +39,24 @@ public class Ship
 	public Ship(ShipType shipType, Position position, boolean vertical)
 	{
 		this.shipType = shipType;
-		this.numberOfHits = 0;
+		
+		this.hits = new boolean[this.shipType.getSize()];
+		for(int i=0; i<this.shipType.getSize(); i++)
+			this.hits[i] = false;
+		
+		
 		this.position = position;
+		
 		this.isVertical = vertical;
+	}
+	
+	public boolean[] getHits(){
+		return this.hits;
+	}
+	
+	//TOUT DOUX
+	public boolean isAlive(){
+		 
 	}
 	
 }

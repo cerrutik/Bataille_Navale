@@ -7,6 +7,8 @@ package fr.iutvalence.info.m2103.project.battleship;
 public class Game 
 {
 	//attributes
+	private Player p1;
+	private Player p2;
 	
 	//builder
 	/**
@@ -15,8 +17,8 @@ public class Game
 	 */
 	public Game()
 	{
-		Player p1 = new Player(1);
-		Player p2 = new Player(2);
+		this.p1 = new Player(1);
+		this.p2 = new Player(2);
 	}
 	//methods
 	/**
@@ -25,7 +27,7 @@ public class Game
 
 	public static void play()
 	{
-		Game newGame = new Game();
+		
 		
 	}
 }

@@ -15,6 +15,13 @@ public class Player
 	 */
 	private final int number;
 	
+	
+	private List<Ship> shipList;
+	
+	private Board boatBoard;
+	
+	private Board attackBoard;
+	
 	//builder
 	/**
 	 * the player is created with a number, a board and an amount of ships (list) set on the board
@@ -24,8 +31,10 @@ public class Player
 	public Player(int num)
 	{
 		this.number = num;
-		new Board();
-		List<Ship> ShipList = new LinkedList<Ship>();
+		this.boatBoard = new Board();
+		this.attackBoard = new Board();
+		
+		this.shipList = new LinkedList<Ship>();
 		ShipList.add(new Ship(ShipType.AIRCRAFT_CARRIER,position(0,0),true));
 		ShipList.add(new Ship(ShipType.BATTLESHIP));
 		ShipList.add(new Ship(ShipType.BATTLESHIP));
