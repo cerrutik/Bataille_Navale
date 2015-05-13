@@ -15,12 +15,8 @@ public class Player
 	 */
 	private final int number;
 	
-	
 	private List<Ship> shipList;
 	
-	private Board boatBoard;
-	
-	private Board attackBoard;
 	
 	//builder
 	/**
@@ -35,16 +31,16 @@ public class Player
 		this.attackBoard = new Board();
 		
 		this.shipList = new LinkedList<Ship>();
-		ShipList.add(new Ship(ShipType.AIRCRAFT_CARRIER,position(0,0),true));
-		ShipList.add(new Ship(ShipType.BATTLESHIP));
-		ShipList.add(new Ship(ShipType.BATTLESHIP));
-		ShipList.add(new Ship(ShipType.SUBMARINE));
-		ShipList.add(new Ship(ShipType.SUBMARINE));
-		ShipList.add(new Ship(ShipType.CRUISER));
-		ShipList.add(new Ship(ShipType.CRUISER));
-		ShipList.add(new Ship(ShipType.PATROL_BOAT));
-		ShipList.add(new Ship(ShipType.PATROL_BOAT));
-		ShipList.add(new Ship(ShipType.PATROL_BOAT));
+		shipList.add(new Ship(ShipType.AIRCRAFT_CARRIER,true));
+		shipList.add(new Ship(ShipType.BATTLESHIP));
+		shipList.add(new Ship(ShipType.BATTLESHIP));
+		shipList.add(new Ship(ShipType.SUBMARINE));
+		shipList.add(new Ship(ShipType.SUBMARINE));
+		shipList.add(new Ship(ShipType.CRUISER));
+		shipList.add(new Ship(ShipType.CRUISER));
+		shipList.add(new Ship(ShipType.PATROL_BOAT));
+		shipList.add(new Ship(ShipType.PATROL_BOAT));
+		shipList.add(new Ship(ShipType.PATROL_BOAT));
 		
 	}
 }

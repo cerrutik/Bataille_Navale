@@ -1,8 +1,8 @@
 package fr.iutvalence.info.m2103.project.battleship;
 /**
- * The ship is a unit, there are different types of ships
- * a ship is set on a board and can be hit
- * if the boat is hit a couple of times (depending on the size of the boat), it is sunk
+ * The ship is a unit, there are different types of ships.
+ * A ship is set on a board and can be hit.
+ * If the boat is hit a couple of times (depending on the size of the boat), it is sunk.
  * @author cerrutik
  *
  */
@@ -16,8 +16,12 @@ public class Ship
 	private final ShipType shipType;
 	
 
+	/**
+	 * Table representing each part of the ship and telling if it is hit or not
+	 */
 	
 	private boolean[] hits;
+	
 	/**
 	 * position of the head of the ship 
 	 */
@@ -32,9 +36,11 @@ public class Ship
 	//builder
 	
 	/**
-	 * Create a ship with a name, a size, a number of hits set to 0, a new position
+	 * Create a ship with a type, a size, a number of hits set to 0, a new position
 	 * and if the ship is vertical or not  
-	 * @param ShipType shipName, int x, int y, boolean vertical
+	 * @param ShipType, 
+	 * @param position,
+	 * @param vertical
 	 */
 	public Ship(ShipType shipType, Position position, boolean vertical)
 	{
@@ -50,13 +56,31 @@ public class Ship
 		this.isVertical = vertical;
 	}
 	
-	public boolean[] getHits(){
+	/**
+	 * Change the value of hits
+	 * @return
+	 */
+	public boolean[] getHits()
+	{
 		return this.hits;
 	}
 	
-	//TOUT DOUX
-	public boolean isAlive(){
-		 
+	/**
+	 * Return false if the boat is sunk
+	 * return true if the ship has a least one part not hit
+	 * @return boolean
+	 */
+	public boolean isAlive()
+	{
+		int hit=0;
+		 for(int i=0; i<this.shipType.getSize();i++)
+			 if (this.hits[i] == true)
+				 hit = hit + 1;
+		if(hit == this.shipType.getSize())
+			return false;
+		return true;
+		
+		
 	}
 	
 }
