@@ -67,7 +67,7 @@ public class Ship
 	
 	/**
 	 * Return false if the boat is sunk
-	 * return true if the ship has a least one part not hit
+	 * return true if the ship has at least one part not hit
 	 * @return boolean
 	 */
 	public boolean isAlive()

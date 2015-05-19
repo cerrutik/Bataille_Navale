@@ -12,21 +12,33 @@ public class Game
 	
 	//builder
 	/**
-	 * Create a new game, using the builder from Player
-	 * creating two new players
+	 * Create two new players
+	 * 
 	 */
 	public Game()
 	{
-		this.p1 = new Player(1);
-		this.p2 = new Player(2);
+		this.p1 = new Player();
+		this.p2 = new Player();
 	}
+	
 	//methods
 	/**
-	 * launch the game, creating two player, giving them a board and some ships
+	 * launch the game, each player choose a position to hit
+	 * 
 	 */
 
 	public static void play()
 	{
+		new Game();
+		while(true)
+		{
+			for Player
+			{
+				Player.choosePositionToHit(Position);
+				
+			}
+			
+		}
 		
 		
 	}

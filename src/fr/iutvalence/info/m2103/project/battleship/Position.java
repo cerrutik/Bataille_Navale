@@ -1,7 +1,7 @@
 package fr.iutvalence.info.m2103.project.battleship;
 /**
  * Position of the head of the ship in the grid
- * two kind of poistion, the vertical position and the horizontal one
+ * two kind of position, the vertical position and the horizontal one
  * @author cerrutik
  *
  */
@@ -27,11 +27,13 @@ public class Position
 		this.horizontalPosition = horizontal;
 	}
 
-	public int getVerticalPosition() {
+	public int getVerticalPosition() 
+	{
 		return verticalPosition;
 	}
 
-	public int getHorizontalPosition() {
+	public int getHorizontalPosition()
+	{
 		return horizontalPosition;
 	}
 	

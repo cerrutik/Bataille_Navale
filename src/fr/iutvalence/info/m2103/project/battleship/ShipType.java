@@ -31,7 +31,7 @@ public enum ShipType
 	//method
 	/**
 	 * Get the size of the ship
-	 * @return
+	 * @return size
 	 */
 	public int getSize()
 	{
